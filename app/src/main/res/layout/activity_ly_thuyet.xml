@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_lythuyet"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#2BBE0B">
+
+        <ImageView
+            android:id="@+id/imgReturn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-50dp"
+            android:gravity="center"
+            android:text="Lý Thuyết"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <ImageView
+        android:src="@drawable/thithuchanh"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/app1" />
+    </ScrollView>
+    <Button
+        android:background="#FFEB3B"
+        android:id="@+id/btn_tinhHuongHayGap"
+        android:text="Một số tình huống hay gặp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <Button
+        android:layout_marginTop="2dp"
+        android:background="#FFC107"
+        android:id="@+id/btn_videoHuongDan"
+        android:text="Các Video hướng dẫn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+</LinearLayout>

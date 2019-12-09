@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="#2BBE0B"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/img_setting2"
+            android:layout_alignParentLeft="true"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/setting" />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Hỗ trợ tìm hiểu luật giao thông"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/img_setting"
+            android:layout_alignParentRight="true"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/setting" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/anh"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/list1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl_header" />
+
+    <LinearLayout
+        android:layout_marginBottom="2dp"
+        android:id="@+id/list1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintBottom_toTopOf="@+id/list2">
+
+        <LinearLayout
+            android:id="@+id/btnLyThuyet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="#2BBE0B"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_lythuyet"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="#2BBE0B"
+                android:src="@drawable/lythuyet" />
+
+            <Button
+                android:id="@+id/btn_lythuyet2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#2BBE0B"
+                android:text="Lý thuyết"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_listVideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="#2BBE0B"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_video"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="#2BBE0B"
+                android:src="@drawable/bg_anh1" />
+
+            <Button
+                android:id="@+id/btn_btn_listVideo2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#2BBE0B"
+                android:text="Video"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/btn_hoidapnhanh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="#2BBE0B"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_hoidapnhanh"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="#2BBE0B"
+                android:src="@drawable/thuchanh" />
+
+            <Button
+                android:id="@+id/btn_hoidapnhanh2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#2BBE0B"
+                android:text="Hỏi đáp"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/btn_BienBao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="#2BBE0B"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_BienBao"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="#2BBE0B"
+                android:src="@drawable/logobienbao" />
+
+            <Button
+                android:id="@+id/btn_BienBao2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#2BBE0B"
+                android:text="Biển Báo"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/btn_traCuuLuat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="#2BBE0B"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_traCuuLuat"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="#2BBE0B"
+                android:src="@drawable/luat" />
+
+            <Button
+                android:id="@+id/btn_traCuuLuat2"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:background="#2BBE0B"
+                android:text="Tra cứu luật"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_timKiem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="#2BBE0B"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_timKiem"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:src="@drawable/timkiem"
+                android:background="#2BBE0B"
+                 />
+
+            <Button
+                android:id="@+id/btn_timKiem2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#2BBE0B"
+                android:text="Tìm kiếm"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

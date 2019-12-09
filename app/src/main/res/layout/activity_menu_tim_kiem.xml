@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activitys.MenuTimKiemActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_menutimkiem"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#2BBE0B">
+
+        <ImageView
+            android:id="@+id/imgReturn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-50dp"
+            android:gravity="center"
+            android:text="Tìm kiếm"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Bạn muốn tìm kiếm theo thể loại nào?"
+        android:textColor="#FF5722"
+        android:textSize="20sp" />
+
+    <Button
+        android:background="#CDDC39"
+        android:id="@+id/btn_video"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="Video" />
+
+    <Button
+        android:background="#FFEB3B"
+        android:id="@+id/btn_luat"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Luật" />
+
+    <Button
+        android:background="#4CAF50"
+        android:id="@+id/btn_bienbao"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Biển Báo" />
+
+</LinearLayout>

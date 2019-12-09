@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Màu nền"
+        android:id="@+id/menu_mauNen">
+        <menu>
+            <item android:title="Màu xanh lá"
+                android:id="@+id/menu_mauXanh"/>
+            <item android:title="Màu Đỏ"
+                android:id="@+id/menu_mauDo"/>
+            <item android:title="Màu xanh Da trời"
+                android:id="@+id/menu_mauVang"/>
+        </menu>
+    </item>
+    <item android:title="Đổi bên"
+        android:id="@+id/menu_doiBen"/>
+</menu>
